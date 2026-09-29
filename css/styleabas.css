@@ -1,0 +1,55 @@
+/* Estilo da aba */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #1adbb5;/*outra cor*/
+}
+
+/* Style do botão dentro da aba */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Muda o background color dos botões quando hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Cria uma elemento da class active/current tablink */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Estilo do conteúdo da aba */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Estilo do botão */
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+.close{ 
+  background-color: #ed7985;
+}/*nova propriedade*/
+
+.altera{ 
+  background-color: #007bff;
+  border-radius: 12px;
+  color: white;
+  padding: 5px 8px;
+}/*nova propriedade*/
+
+.topright:hover {color: red;}
