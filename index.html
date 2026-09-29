@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  <link href="./css/styleabas.css" rel="stylesheet" type="text/css" />
+  <script src="Turma.js">  </script>
+</head>
+
+<body>
+  
+  <script src="./js/Aluno.js"></script>
+  <script src="./js/Turma.js"></script>
+  <script src="./js/script.js">  </script>
+  <script src="./js/Abas.js"></script>
+  <div class="container">
+    <h1>Sistema Escola</h1>
+    
+    
+    <div>
+      <br>
+      Média
+      <!-- Abas  -->
+      <div class="tab">
+        <button class="tablinks" onclick="abrirAbas(event, 'Turma1')" id="defaultOpen">Cadastro</button>
+        <button class="tablinks" onclick="abrirAbas(event,'Turma2')">Listagem</button>
+
+      </div>
+      <!-- Conteudo da aba -->
+      <div id="Turma1" class="tabcontent"><!--o id deve ser igual aa id em abrirAbas-->
+        <h3>Cadastro</h3>
+        <div class="cadasatro">
+          <b>Sistema Escola</b> <br>
+          Nome <input id="nome" type="text"> <br>
+
+          Nota 1 <input id="n1" type="text"> <br>
+          Nota 2 <input id="n2" type="text"> <br>
+          <button class="front" onclick="cadastrar()">Cadastrar</button>
+          </div>
+        
+        <span class="close" onclick="this.parentElement.style.display='none'"><b>X</b></span>
+        <!--fechar aba, com classe propria pra o css-->
+      </div>
+      <div id="Turma2" class="tabcontent">
+
+        <h3>Dados</h3>
+        <button class="front" onclick="listarTurma()">Listar</button>
+        <p id="dadosTurma"></p>
+        <p id="resultado"></p>
+        <span class="altera" onclick="alterar()"><b>Alterar Código</b></span>
+        <span class="close" onclick="this.parentElement.style.display='none'"><b>X</b></span>
+      </div>
+    </div><!--aba-->
+  </div><!--container-->
+
+</body>
+
+</html>
